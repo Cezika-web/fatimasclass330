@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resumo Pós-Aula — Fatima — CZK English</title>
+
+  <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=-d1gft43JQ_iToNiqzYgiQoPGRS-fY1IRF6pdi3L0n8vj5okUjwcX79AA4tLgZEMiXiNbP8NZ3Q6I2y540rwTc2CWy7YmvYwS6nllhcqLWAbT5IPgw_uyMJGqEcnRH5m0f9cT1syYvWuaCeWfYfoLDvDkncqvJGgzbzc7lSDsnCha3z3_TYdfdw1JrBy_MbKAAsFBaYEySHFpM4Ko_2DLcRd1miuVZx8_6t54oMGDD3HRVKN9bBUwZE0c2ekR3Fk9qaHtDVEAN5BV2UT1rnjYw" charset="UTF-8"></script><style>
+    :root{
+      --page-bg: #f4f7fa;
+      --card-bg: #fff;
+      --accent: #2f86e6;
+      --accent-dark: #1f6fd1;
+      --green: #36b37e;
+      --muted: #6b7280;
+      --border: #e6eef8;
+      --box-radius: 12px;
+      --card-width: 720px;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      padding:0;
+      background:var(--page-bg);
+      font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    .wrap{
+      min-height:100%;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:48px 20px;
+    }
+
+    .card{
+      width:100%;
+      max-width:var(--card-width);
+      background:var(--card-bg);
+      border-radius:18px;
+      padding:28px;
+      box-shadow:0 6px 22px rgba(33,47,60,0.06);
+      border:1px solid rgba(15,33,64,0.03);
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      gap:12px;
+      margin-bottom:8px;
+    }
+
+    .badge{
+      background:linear-gradient(180deg,#fff,#f2fbff);
+      border:1px solid var(--border);
+      padding:8px 12px;
+      border-radius:999px;
+      color:var(--accent);
+      font-weight:700;
+      font-size:0.85rem;
+    }
+
+    h1{
+      margin:0;
+      font-size:1.3rem;
+      color:#0f1724;
+    }
+
+    .meta{
+      color:var(--muted);
+      font-size:0.92rem;
+      margin-top:6px;
+    }
+
+    .actions{
+      display:flex;
+      gap:10px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:10px;
+      border:none;
+      background:var(--accent);
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+      cursor:pointer;
+      box-shadow:0 6px 14px rgba(47,134,230,0.12);
+    }
+
+    .btn.secondary{
+      background:#fff;
+      color:var(--accent);
+      border:1px solid var(--border);
+      box-shadow:none;
+    }
+
+    main{margin-top:18px;}
+    section{margin-top:18px;}
+
+    .panel{
+      background:#fbfdff;
+      border-radius:12px;
+      padding:16px;
+      border:1px solid var(--border);
+    }
+
+    .outline-card{
+      border-radius:10px;
+      border:1px solid var(--border);
+      padding:16px;
+      background:#fff;
+    }
+
+    .vocab-grid{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-top:10px;
+    }
+
+    .vocab{
+      flex:1;
+      min-width:220px;
+      border-radius:10px;
+      padding:14px;
+      border:2px solid #dfeefe;
+      background:#fff;
+    }
+
+    .vocab.green{
+      border-color:#c9f3dc;
+      background:#f5fff6;
+    }
+
+    .vocab h3{
+      margin:0;
+      font-size:1rem;
+      color:#154360;
+    }
+
+    .vocab p{
+      margin:8px 0 0 0;
+      color:var(--muted);
+      font-size:0.95rem;
+    }
+
+    .media-row{
+      display:flex;
+      gap:14px;
+      margin-top:12px;
+      flex-wrap:wrap;
+    }
+
+    .media-btn{
+      background:#fff;
+      border:1px solid var(--border);
+      padding:12px 16px;
+      border-radius:10px;
+      font-weight:700;
+      color:var(--accent);
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      min-width:200px;
+      justify-content:center;
+    }
+
+    .homework{
+      background:#f3fff6;
+      border:1px solid #d7f5df;
+      border-radius:10px;
+      padding:14px;
+      margin-top:10px;
+    }
+
+    .speaking{
+      margin-top:18px;
+      padding:16px;
+      border-radius:12px;
+      background:linear-gradient(180deg,#ffffff,#fbfdff);
+      border:1px solid var(--border);
+      max-width:640px;
+    }
+
+    .speaking h2{
+      margin:0 0 10px 0;
+      font-size:1.05rem;
+      color:#0f1724;
+    }
+
+    .talk-table{
+      width:100%;
+      border-collapse:collapse;
+      border-radius:10px;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid #e1e9f5;
+      font-size:0.9rem;
+    }
+
+    .talk-table th,
+    .talk-table td{
+      padding:8px 10px;
+      text-align:left;
+    }
+
+    .talk-table th{
+      background:#eef4ff;
+      color:#1b3556;
+      font-weight:700;
+      border-bottom:1px solid #dde6fa;
+    }
+
+    .row-teacher{
+      background:#e7f2ff;
+    }
+
+    .row-student{
+      background:#e8f7ef;
+    }
+
+    .talk-label{
+      font-weight:700;
+    }
+
+    .talk-percent{
+      font-weight:700;
+      color:#0f1724;
+    }
+
+    .talk-time{
+      color:var(--muted);
+    }
+
+    footer{
+      margin-top:20px;
+      color:var(--muted);
+      font-size:0.9rem;
+      text-align:center;
+    }
+
+    @media (max-width:720px){
+      .card{padding:18px;border-radius:14px;}
+      .vocab-grid{flex-direction:column;}
+      .media-row{flex-direction:column;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <article class="card" role="main">
+      <header>
+        <div>
+          <div style="display:flex;gap:10px;align-items:center;">
+            <span class="badge">PÓS-AULA</span>
+            <h1>Pronomes pessoais, pronomes objeto e leitura guiada</h1>
+          </div>
+          <div class="meta" style="margin-top:8px;">
+            <strong>Professor:</strong> César &nbsp;•&nbsp;
+            <strong>Aluno:</strong> Fatima &nbsp;•&nbsp;
+            <strong>Data:</strong> 03/30/2026
+          </div>
+        </div>
+
+        <div class="actions">
+          <a class="btn" href="#" onclick="window.print();return false;">Imprimir / Salvar PDF</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="panel">
+          <p style="margin:0;font-weight:600;color:#08325a;">
+            Revisão de leitura, compreensão de pequenos textos, pronúncia e uso de pronomes pessoais e objeto.
+          </p>
+        </section>
+
+        <section>
+          <h2 style="margin-bottom:8px;">Resumo da Aula</h2>
+          <div class="outline-card">
+            <p style="margin:0 0 8px 0;">
+              Na aula de hoje, trabalhamos principalmente a <strong>leitura guiada de pequenos textos em inglês</strong> e a identificação das ideias principais. A proposta foi verificar se a aluna já consegue analisar textos curtos direcionados, responder perguntas de compreensão e reconhecer quais habilidades aparecem como mais difíceis para os falantes nos textos, como <em>speaking</em>, <em>listening</em> e <em>vocabulary</em>.
+            </p>
+            <p style="margin:0 0 8px 0;">
+              Também houve um foco importante em <strong>gramática</strong>, especialmente na diferença entre <strong>pronomes pessoais</strong> e <strong>pronomes objeto</strong>. Foi explicado que pronomes pessoais aparecem antes do verbo e ajudam a conjugá-lo, como em <em>I like</em>, <em>he likes</em> e <em>they like</em>. Já os pronomes objeto aparecem quando não estão conjugando verbo, como em <em>for me</em> e <em>Do you get along with them?</em>.
+            </p>
+            <p style="margin:0 0 8px 0;">
+              Na parte de <strong>pronúncia e leitura em voz alta</strong>, corrigimos especialmente a tonicidade e a clareza de palavras como <em>difficult</em>, <em>issues</em>, <em>Turkish</em> e <em>kinds</em>. Também retomamos ritmo e entonação, com atenção para expressões com <em>get</em>, como <em>get up</em>, <em>get on</em> e <em>get to work</em>, observando como os sons se conectam na fala.
+            </p>
+            <p style="margin:0;">
+              Por fim, a aula reforçou vocabulário útil de compreensão e leitura, como <em>of course</em>, <em>issues</em>, <em>spelling</em> e <em>different kinds of English</em>. A leitura da Fátima mostrou evolução, principalmente no respeito à pontuação e na fluidez geral, mesmo ainda havendo pontos pontuais para lapidar na pronúncia.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 style="margin-bottom:8px;">Key Vocabulary</h2>
+          <div class="vocab-grid">
+            <div class="vocab">
+              <h3>issues</h3>
+              <p style="margin-top:8px;font-size:0.92rem;color:var(--muted);">
+                <em>(pt) problemas, questões</em><br>
+                <small>Listening issues can make English difficult.</small>
+              </p>
+            </div>
+            <div class="vocab green">
+              <h3>get along</h3>
+              <p style="margin-top:8px;font-size:0.92rem;color:var(--muted);">
+                <em>(pt) se dar bem com alguém</em><br>
+                <small>Do you get along with them?</small>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 style="margin-bottom:8px;">Vocabulário da aula</h2>
+          <div class="outline-card">
+            <h3 style="margin-top:0;">Gramática e estrutura</h3>
+            <ul>
+              <li><strong>personal pronouns</strong> – pronomes pessoais</li>
+              <li><strong>object pronouns</strong> – pronomes objeto</li>
+              <li><strong>I / you / he / she / it / we / they</strong> – eu / você / ele / ela / isso / nós / eles</li>
+              <li><strong>me / you / him / her / it / us / them</strong> – mim / você / ele / ela / isso / nós / eles</li>
+              <li><strong>for me</strong> – para mim</li>
+              <li><strong>with them</strong> – com eles</li>
+              <li><strong>This is us.</strong> – Isso é a gente / esses somos nós</li>
+            </ul>
+
+            <h3>Vocabulário de leitura e compreensão</h3>
+            <ul>
+              <li><strong>issues</strong> – problemas, questões</li>
+              <li><strong>of course</strong> – claro, com certeza</li>
+              <li><strong>Turkish</strong> – turco / turca</li>
+              <li><strong>spelling</strong> – soletração / ortografia</li>
+              <li><strong>pronunciation</strong> – pronúncia</li>
+              <li><strong>kinds of English</strong> – tipos de inglês</li>
+              <li><strong>listening</strong> – escuta / compreensão auditiva</li>
+              <li><strong>speaking</strong> – fala</li>
+              <li><strong>reading</strong> – leitura</li>
+              <li><strong>vocabulary</strong> – vocabulário</li>
+            </ul>
+
+            <h3>Expressões e chunks trabalhados</h3>
+            <ul>
+              <li><strong>get up</strong> – levantar</li>
+              <li><strong>get on the bus</strong> – entrar no ônibus</li>
+              <li><strong>get to work</strong> – chegar ao trabalho</li>
+              <li><strong>get along with</strong> – se dar bem com</li>
+              <li><strong>I think the easiest part of English for me is...</strong> – Eu acho que a parte mais fácil do inglês para mim é...</li>
+              <li><strong>Reading is no problem for me, but listening and speaking are difficult.</strong> – Ler não é problema para mim, mas ouvir e falar são difíceis.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2 style="margin-bottom:8px;">Frases modelo da aula</h2>
+          <div class="outline-card">
+            <ul>
+              <li>I like English.</li>
+              <li>He likes English.</li>
+              <li>They like English.</li>
+              <li>Do you get along with them?</li>
+              <li>This is us.</li>
+              <li>I think the easiest part of English for me is vocabulary.</li>
+              <li>Reading is no problem for me, but listening and speaking are difficult.</li>
+              <li>There are different kinds of English.</li>
+              <li>You get up in the morning.</li>
+              <li>You get on the bus and get to work on time.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2 style="margin-bottom:8px;">Correções importantes</h2>
+          <div class="outline-card">
+            <ul>
+              <li><strong>difficult</strong>: atenção à sílaba tônica. Evitar ler como algo próximo de “dificultá”. O foco deve ficar mais natural em <em>DIFF-i-cult</em>.</li>
+              <li><strong>issues</strong>: revisar a pronúncia. A palavra foi retomada várias vezes para fixar o som correto.</li>
+              <li><strong>kinds</strong> ≠ <strong>kings</strong>: houve confusão entre <em>different kinds of English</em> e <em>different kings of English</em>. O correto é <strong>kinds</strong>.</li>
+              <li><strong>for me</strong>, não <strong>for I</strong>: depois de preposição, usamos pronome objeto.</li>
+              <li><strong>with them</strong>, não <strong>with they</strong>: novamente, depois de preposição, o correto é usar pronome objeto.</li>
+              <li><strong>I like / he likes / they like</strong>: reforço da ideia de que o pronome pessoal é o que ajuda a conjugar o verbo.</li>
+              <li><strong>get to work</strong>: praticamos a conexão natural dos sons, sem travar entre as palavras.</li>
+              <li>Na leitura, houve melhora clara no uso da <strong>pontuação</strong>, com pausas mais naturais e menos leitura “corrida”.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2 style="margin-bottom:8px;">Transcrição &amp; Gravação</h2>
+          <div class="media-row">
+            <a class="media-btn" href="#" role="button">📄 Acessar transcrição</a>
+
+            <a
+              class="media-btn"
+              href="https://youtu.be/yM1RMyFOOm8"
+              target="_blank"
+              rel="noopener noreferrer"
+              role="button"
+              style="background:linear-gradient(180deg,#1f6fd1,#2f86e6);color:#fff;border:none;min-width:260px;"
+            >
+              🎥 Assistir gravação (acesso privado)
+            </a>
+          </div>
+        </section>
+
+        <section class="speaking" aria-label="Distribuição de fala">
+          <h2>Tempo de Fala (Talk Time)</h2>
+          <table class="talk-table">
+            <thead>
+              <tr>
+                <th>Quem falou</th>
+                <th>Porcentagem</th>
+                <th>Duração aproximada</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="row-teacher">
+                <td><span class="talk-label">César (Professor)</span></td>
+                <td><span class="talk-percent">72%</span></td>
+                <td class="talk-time">~36 minutos</td>
+              </tr>
+              <tr class="row-student">
+                <td><span class="talk-label">Fatima</span></td>
+                <td><span class="talk-percent">28%</span></td>
+                <td class="talk-time">~14 minutos</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2 style="margin-bottom:8px;">Homework</h2>
+          <div class="homework">
+            <p style="margin:0 0 8px 0;">
+              📌 <strong>Lição de casa (como combinado em aula):</strong>
+            </p>
+            <ul style="margin:0 0 6px 18px;padding:0;font-size:0.94rem;color:var(--muted);">
+              <li>Lembrar de ler o pós-aula de 2 a 3x na semana.</li>
+            </ul>
+          </div>
+
+          <div style="margin-top:14px;">
+            <a class="btn" href="https://wa.me" style="background:#25D366;border-radius:10px;box-shadow:none;">
+              💬 Falar comigo no WhatsApp
+            </a>
+          </div>
+        </section>
+
+      </main>
+
+      <footer>
+        <p style="margin:18px 0 0 0;color:var(--muted);font-size:0.9rem;">
+          © 2025 CZK English • Este conteúdo é exclusivo para fins educacionais. • Suporte: czkenglish@gmail.com
+        </p>
+      </footer>
+    </article>
+  </div>
+</body>
+</html>
